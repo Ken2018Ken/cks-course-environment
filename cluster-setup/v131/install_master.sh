@@ -30,7 +30,7 @@ elif [ "${PLATFORM}" == "x86_64" ]; then
   PLATFORM="amd64"
 else
   echo "${PLATFORM} has to be either amd64 or arm64/aarch64. Check containerd supported binaries page"
-  echo "https://github.com/containerd/containerd/blob/main/docs/getting-started.md#option-1-from-the-official-binaries"
+  ###echo "https://github.com/containerd/containerd/blob/main/docs/getting-started.md#option-1-from-the-official-binaries"
   exit 1
 fi
 
