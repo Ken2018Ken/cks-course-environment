@@ -398,13 +398,13 @@ sudo cp -i /etc/kubernetes/admin.conf ~/.kube/config
 
 
 ### CNI
-kubectl apply -f https://raw.githubusercontent.com/ken2018ken/cks-course-environment/master/cluster-setup/net.yaml
-echo "Waiting for weave-net to be ready..."
-sleep 10
-kubectl -n kube-system wait --for=condition=Ready pod -l name=weave-net --timeout=3600s
-sleep 5
-kubectl -n kube-system delete pods -l k8s-app=kube-dns --force --grace-period 0
-echo "Waiting for weave-net to be ready... done"
+#kubectl apply -f https://raw.githubusercontent.com/ken2018ken/cks-course-environment/master/cluster-setup/net.yaml
+#echo "Waiting for weave-net to be ready..."
+#sleep 10
+#kubectl -n kube-system wait --for=condition=Ready pod -l name=weave-net --timeout=3600s
+#sleep 5
+#kubectl -n kube-system delete pods -l k8s-app=kube-dns --force --grace-period 0
+#echo "Waiting for weave-net to be ready... done"
 
 
 ### finished
